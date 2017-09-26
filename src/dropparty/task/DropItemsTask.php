@@ -19,7 +19,7 @@ class DropItemsTask extends PluginTask {
 		return $this->plugin;
 	}
 	
-	public function onRun($currentTick) {
+	public function onRun(int $currentTick) {
 		
 		if($this->getPlugin()->status == "enabled") {
 		  $level = $this->getPlugin()->getServer()->getLevelByName($this->getPlugin()->cfg["World"]);
