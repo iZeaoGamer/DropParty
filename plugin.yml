@@ -3,4 +3,4 @@ author: HotshotHD
 version: 1.0.3
 description: Schedule DropParties for your server
 main: dropparty\DropParty
-api: [3.0.0-ALPHA5, 3.0.0-ALPHA6, 3.0.0, 3.0.1]
+api: [3.0.0-ALPHA5, 3.0.0-ALPHA6, 3.0.0, 4.0.0]
