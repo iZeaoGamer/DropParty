@@ -41,7 +41,6 @@ class DropParty extends PluginBase {
 		)))->getAll();
 		
 		$this->time = $this->cfg["Time"];
-		$this->getServer()->getScheduler()->scheduleRepeatingTask(new task\DropPartyTask($this), 20 * 30);
 		$this->getServer()->getScheduler()->scheduleRepeatingTask(new task\DropItemsTask($this), 20);
 	}
 	
