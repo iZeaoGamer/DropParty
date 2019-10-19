@@ -28,9 +28,9 @@ class DropParty extends PluginBase {
 		"Popup.Enabled" => true,
 		"Popup.Message" => "[DropParty] Items are dropping!",
 		"Coordinates" => [
-		"X" => 0,
-		"Y" => 0,
-		"Z" => 0,
+		"X" => 14,
+		"Y" => 86,
+		"Z" => 15,
 		],
 		"Items" => [
 		57,
@@ -41,7 +41,7 @@ class DropParty extends PluginBase {
 		)))->getAll();
 		
 		$this->time = $this->cfg["Time"];
-		$this->getServer()->getScheduler()->scheduleRepeatingTask(new task\DropPartyTask($this), 20 * 60);
+		$this->getServer()->getScheduler()->scheduleRepeatingTask(new task\DropPartyTask($this), 20 * 30);
 		$this->getServer()->getScheduler()->scheduleRepeatingTask(new task\DropItemsTask($this), 20);
 	}
 	
